@@ -4,8 +4,8 @@ $im = @imagecreate(100, 20)
     or die("Cannot Initialize new GD image stream");
 $background_color = imagecolorallocate($im, 255, 255, 255);
 $text_color = imagecolorallocate($im, 0, 0, 0);
-$barcode = $_GET['barcode'];
-if ($barcode===32826012040648) {
+$title = $_GET['title'];
+if ($title==="Captain America : The Winter Soldier") {
 	$date = date('n/d/y',strtotime("+3 days"));
 } else {
 	$date = date('n/d/y',strtotime("+1 week"));
