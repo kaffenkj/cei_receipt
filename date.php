@@ -5,7 +5,7 @@ $im = @imagecreate(100, 20)
 $background_color = imagecolorallocate($im, 255, 255, 255);
 $text_color = imagecolorallocate($im, 0, 0, 0);
 $item = $_GET['item'];
-if ($item==="Captain America : The Winter Soldier") {
+if ($item==32826012040648) {
 	$date = date('n/d/y',strtotime("+3 days"));
 } else {
 	$date = date('n/d/y',strtotime("+1 week"));
